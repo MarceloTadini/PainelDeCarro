@@ -1,0 +1,1093 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+idloc IDLOC 5 200000 200000 8 1
+init CODE 0 0 0 4 1
+config CONFIG 4 300000 300000 E 1
+$dist/default/production\Projeto01.X.production.o
+cinit CODE 0 1E52 1E52 16 1
+idloc IDLOC 5 200000 200000 8 1
+text0 CODE 0 644 644 6C8 1
+text1 CODE 0 1720 1720 68 1
+text2 CODE 0 1B3A 1B3A 3E 1
+text3 CODE 0 15C0 15C0 B0 1
+text4 CODE 0 189A 189A 56 1
+text5 CODE 0 1E16 1E16 1E 1
+text6 CODE 0 1BB6 1BB6 3A 1
+text7 CODE 0 150C 150C B4 1
+text8 CODE 0 1DCA 1DCA 26 1
+text9 CODE 0 1E34 1E34 1E 1
+text10 CODE 0 17E8 17E8 5A 1
+text11 CODE 0 1AB6 1AB6 42 1
+text12 CODE 0 1E72 1E72 2 1
+text13 CODE 0 1CC4 1CC4 30 1
+text14 CODE 0 1E68 1E68 A 1
+text15 CODE 0 1C60 1C60 32 1
+text16 CODE 0 1B78 1B78 3E 1
+text17 CODE 0 1312 1312 136 1
+text18 CODE 0 1994 1994 4E 1
+text19 CODE 0 1D22 1D22 2A 1
+text20 CODE 0 1D4C 1D4C 2A 1
+text21 CODE 0 1A2A 1A2A 46 1
+text22 CODE 0 1788 1788 60 1
+text23 CODE 0 1A70 1A70 46 1
+text24 CODE 0 18F0 18F0 54 1
+text25 CODE 0 1842 1842 58 1
+text26 CODE 0 1CF4 1CF4 2E 1
+text27 CODE 0 1D76 1D76 2A 1
+text28 CODE 0 1C92 1C92 32 1
+text29 CODE 0 1BF0 1BF0 38 1
+text30 CODE 0 1C28 1C28 38 1
+text31 CODE 0 11A8 11A8 16A 1
+text32 CODE 0 1DA0 1DA0 2A 1
+text33 CODE 0 D0C D0C 24E 1
+text34 CODE 0 1E74 1E74 2 1
+text35 CODE 0 1AF8 1AF8 42 1
+text36 CODE 0 1DF0 1DF0 26 1
+text37 CODE 0 1448 1448 C4 1
+text38 CODE 0 1944 1944 50 1
+text39 CODE 0 19E2 19E2 48 1
+text40 CODE 0 F5A F5A 24E 1
+text41 CODE 0 1670 1670 B0 1
+cstackCOMRAM COMRAM 1 1 1 39 1
+smallconst SMALLCONST 0 600 600 44 1
+bssCOMRAM COMRAM 1 3A 3A 8 1
+config CONFIG 4 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 80-5FF 1
+SFR F80-FFF 1
+BANK0 80-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-5FF 1
+CONST 1E76-7FFF 1
+STACK 80-5FF 1
+SMALLCONST 1E76-7FFF 1
+CODE 4-5FF 1
+CODE 1E76-7FFF 1
+BIGRAM 42-5FF 1
+COMRAM 42-7F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 1E76-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Projeto01.X.production.o
+1670 text41 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1670 text41 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1674 text41 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1682 text41 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+168A text41 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+168E text41 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+169C text41 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+16A4 text41 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+16B6 text41 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+16BA text41 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+16BE text41 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+16C4 text41 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+16C6 text41 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+16D4 text41 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+16EA text41 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+16F2 text41 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+16F8 text41 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+16FE text41 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+170E text41 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+1716 text41 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+171E text41 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+F5A text40 CODE >54:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+F5A text40 CODE >56:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+F76 text40 CODE >57:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+FA8 text40 CODE >58:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+FCA text40 CODE >59:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+FE6 text40 CODE >60:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+101C text40 CODE >61:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+1042 text40 CODE >62:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+105E text40 CODE >63:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+1094 text40 CODE >64:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+10BA text40 CODE >65:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+10D6 text40 CODE >66:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+110C text40 CODE >67:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+1132 text40 CODE >68:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+114E text40 CODE >69:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+1184 text40 CODE >70:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+11A6 text40 CODE >73:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+19E2 text39 CODE >25:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+19E2 text39 CODE >27:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+19F6 text39 CODE >28:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+1A0A text39 CODE >29:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+1A1E text39 CODE >31:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+1A20 text39 CODE >33:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+1A24 text39 CODE >34:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+1A28 text39 CODE >36:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+1944 text38 CODE >38:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+1944 text38 CODE >40:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+1948 text38 CODE >41:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+195E text38 CODE >42:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+1966 text38 CODE >45:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+1968 text38 CODE >47:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+1976 text38 CODE >49:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+197C text38 CODE >50:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+1982 text38 CODE >51:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+198A text38 CODE >52:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+1992 text38 CODE >53:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\adc.c
+1448 text37 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1448 text37 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+144C text37 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+145A text37 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1462 text37 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1466 text37 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1474 text37 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+147C text37 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1480 text37 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1488 text37 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+149A text37 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+149E text37 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+14A2 text37 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+14A8 text37 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+14AA text37 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+14B8 text37 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+14BE text37 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+14D4 text37 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+14DC text37 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+14DE text37 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+14E4 text37 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+14EA text37 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+14FA text37 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1502 text37 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+150A text37 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1DF0 text36 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+1DF0 text36 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+1DFC text36 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+1E04 text36 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+1E0C text36 CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+1E14 text36 CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+1AF8 text35 CODE >12:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\ds1307.c
+1AF8 text35 CODE >13:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\ds1307.c
+1B38 text35 CODE >14:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\ds1307.c
+1E74 text34 CODE >22:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1E74 text34 CODE >27:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+D0C text33 CODE >14:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+D0C text33 CODE >16:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+D28 text33 CODE >17:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+D5A text33 CODE >18:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+D7C text33 CODE >19:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+D98 text33 CODE >20:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+DA0 text33 CODE >21:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+DD2 text33 CODE >22:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+DF4 text33 CODE >23:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+E10 text33 CODE >24:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+E18 text33 CODE >25:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+E4A text33 CODE >26:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+E6C text33 CODE >27:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+E88 text33 CODE >28:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+E90 text33 CODE >29:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+EC2 text33 CODE >30:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+EE4 text33 CODE >31:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+F00 text33 CODE >32:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+F08 text33 CODE >33:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+F3A text33 CODE >34:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+F58 text33 CODE >38:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+1DA0 text32 CODE >39:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1DA0 text32 CODE >41:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1DB4 text32 CODE >42:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1DC8 text32 CODE >43:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+11A8 text31 CODE >39:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+11A8 text31 CODE >40:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+11C4 text31 CODE >41:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+11EC text31 CODE >42:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+1208 text31 CODE >43:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+1234 text31 CODE >44:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+1250 text31 CODE >45:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+127C text31 CODE >46:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+1298 text31 CODE >47:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+12C4 text31 CODE >48:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+12E0 text31 CODE >49:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+130C text31 CODE >50:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+130C text31 CODE >51:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+1310 text31 CODE >52:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\io.c
+1C28 text30 CODE >29:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1C28 text30 CODE >31:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1C3C text30 CODE >32:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1C5E text30 CODE >33:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1BF0 text29 CODE >34:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1BF0 text29 CODE >36:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1C04 text29 CODE >37:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1C26 text29 CODE >38:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1C92 text28 CODE >100:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1C92 text28 CODE >102:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1C96 text28 CODE >103:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1C9A text28 CODE >104:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1CAE text28 CODE >105:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1CB4 text28 CODE >106:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1CB8 text28 CODE >107:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1CBC text28 CODE >108:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1CC0 text28 CODE >109:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1CC2 text28 CODE >110:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1D76 text27 CODE >45:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1D76 text27 CODE >47:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1D8A text27 CODE >48:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1D9E text27 CODE >49:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1CF4 text26 CODE >71:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1CF4 text26 CODE >73:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1CF8 text26 CODE >74:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1CFC text26 CODE >75:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1D10 text26 CODE >76:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1D14 text26 CODE >77:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1D18 text26 CODE >80:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1D1C text26 CODE >81:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1D20 text26 CODE >82:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1842 text25 CODE >84:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1844 text25 CODE >85:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1854 text25 CODE >86:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1858 text25 CODE >87:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+185C text25 CODE >88:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1860 text25 CODE >90:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1864 text25 CODE >91:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1878 text25 CODE >92:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+188C text25 CODE >95:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1890 text25 CODE >96:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1894 text25 CODE >97:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1898 text25 CODE >98:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+18F0 text24 CODE >131:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+18F2 text24 CODE >132:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+18F6 text24 CODE >134:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+18FE text24 CODE >135:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+190C text24 CODE >136:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1926 text24 CODE >137:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+192C text24 CODE >138:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+193C text24 CODE >139:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1940 text24 CODE >141:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1942 text24 CODE >142:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1A70 text23 CODE >52:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1A70 text23 CODE >54:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1A80 text23 CODE >55:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1A84 text23 CODE >56:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1A88 text23 CODE >57:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1A9C text23 CODE >59:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1AA0 text23 CODE >61:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1AA4 text23 CODE >65:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1AA8 text23 CODE >66:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1AAC text23 CODE >67:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1AB0 text23 CODE >68:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1AB4 text23 CODE >69:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1788 text22 CODE >113:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+178A text22 CODE >116:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+179A text22 CODE >117:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+179E text22 CODE >119:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+17A2 text22 CODE >120:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+17B8 text22 CODE >121:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+17BC text22 CODE >122:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+17CE text22 CODE >123:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+17D2 text22 CODE >124:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+17E2 text22 CODE >125:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+17E6 text22 CODE >128:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\i2c.c
+1A2A text21 CODE >29:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\ds1307.c
+1A2A text21 CODE >31:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\ds1307.c
+1A38 text21 CODE >32:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\ds1307.c
+1A46 text21 CODE >33:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\ds1307.c
+1A54 text21 CODE >34:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\ds1307.c
+1A66 text21 CODE >35:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\ds1307.c
+1A6E text21 CODE >36:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\ds1307.c
+1D4C text20 CODE >14:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+1D4C text20 CODE >15:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+1D60 text20 CODE >16:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+1D74 text20 CODE >17:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+1D22 text19 CODE >9:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+1D22 text19 CODE >10:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+1D36 text19 CODE >11:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+1D4A text19 CODE >12:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+1994 text18 CODE >18:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+1994 text18 CODE >20:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+19A8 text18 CODE >21:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+19AC text18 CODE >22:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+19C0 text18 CODE >23:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+19C4 text18 CODE >24:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+19CA text18 CODE >25:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+19DC text18 CODE >26:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+19E0 text18 CODE >27:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+1312 text17 CODE >27:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1312 text17 CODE >32:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+131A text17 CODE >33:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1342 text17 CODE >35:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1370 text17 CODE >36:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+138E text17 CODE >37:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+13B4 text17 CODE >39:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+13D2 text17 CODE >40:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+13FC text17 CODE >42:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1404 text17 CODE >43:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+141C text17 CODE >44:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+141E text17 CODE >45:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1422 text17 CODE >46:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1426 text17 CODE >47:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+142E text17 CODE >48:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+142E text17 CODE >49:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+143E text17 CODE >50:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1446 text17 CODE >52:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1B78 text16 CODE >3:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+1B78 text16 CODE >4:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+1B8C text16 CODE >5:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+1BA0 text16 CODE >6:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+1BB4 text16 CODE >7:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\so.c
+1C60 text15 CODE >54:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1C60 text15 CODE >55:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1C64 text15 CODE >56:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1C78 text15 CODE >57:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1C8C text15 CODE >58:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1C90 text15 CODE >59:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1E68 text14 CODE >14:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1E68 text14 CODE >15:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1E70 text14 CODE >16:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\keypad.c
+1CC4 text13 CODE >10:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1CC4 text13 CODE >12:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1CD0 text13 CODE >15:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1CF2 text13 CODE >16:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1E72 text12 CODE >5:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1E72 text12 CODE >9:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1AB6 text11 CODE >18:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1AB6 text11 CODE >19:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1ACA text11 CODE >20:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1AD6 text11 CODE >21:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1AEA text11 CODE >22:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1AF6 text11 CODE >23:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+17E8 text10 CODE >31:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+17EA text10 CODE >32:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+17FE text10 CODE >33:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1812 text10 CODE >34:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1816 text10 CODE >36:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1828 text10 CODE >37:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+183C text10 CODE >38:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1840 text10 CODE >39:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1E34 text9 CODE >40:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1E36 text9 CODE >41:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1E44 text9 CODE >42:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1E50 text9 CODE >43:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1DCA text8 CODE >25:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1DCC text8 CODE >26:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1DD6 text8 CODE >27:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1DEA text8 CODE >28:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1DEE text8 CODE >29:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+150C text7 CODE >72:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+150C text7 CODE >73:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1520 text7 CODE >74:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1534 text7 CODE >75:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1538 text7 CODE >76:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1544 text7 CODE >78:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1552 text7 CODE >79:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+155E text7 CODE >80:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+156C text7 CODE >81:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1578 text7 CODE >82:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1586 text7 CODE >83:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1592 text7 CODE >85:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+15A0 text7 CODE >86:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+15AC text7 CODE >88:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+15B2 text7 CODE >89:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+15B8 text7 CODE >90:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+15BE text7 CODE >91:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1BB6 text6 CODE >44:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1BB6 text6 CODE >45:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1BC8 text6 CODE >46:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1BD2 text6 CODE >48:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1BE4 text6 CODE >49:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1BEE text6 CODE >51:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1E16 text5 CODE >52:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1E18 text5 CODE >53:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1E26 text5 CODE >54:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+1E32 text5 CODE >55:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+189A text4 CODE >57:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+189A text4 CODE >58:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+18A2 text4 CODE >59:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+18A6 text4 CODE >60:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+18C2 text4 CODE >61:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+18C6 text4 CODE >59:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+18EE text4 CODE >63:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\lcd.c
+15C0 text3 CODE >3:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+15C0 text3 CODE >4:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+15CE text3 CODE >5:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+15E2 text3 CODE >6:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+15E6 text3 CODE >7:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+15FA text3 CODE >9:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1608 text3 CODE >10:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+161C text3 CODE >11:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1620 text3 CODE >12:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1634 text3 CODE >14:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1642 text3 CODE >15:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1656 text3 CODE >16:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+165A text3 CODE >17:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+166E text3 CODE >19:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1B3A text2 CODE >45:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1B3A text2 CODE >46:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1B4E text2 CODE >47:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1B62 text2 CODE >48:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1B76 text2 CODE >49:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1720 text1 CODE >21:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1720 text1 CODE >22:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+172E text1 CODE >23:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1742 text1 CODE >25:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1750 text1 CODE >26:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1764 text1 CODE >28:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1772 text1 CODE >29:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+1786 text1 CODE >31:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\rgb.c
+644 text0 CODE >16:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+644 text0 CODE >17:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+644 text0 CODE >18:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+654 text0 CODE >19:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+658 text0 CODE >20:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+65C text0 CODE >21:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+660 text0 CODE >22:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+664 text0 CODE >23:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+670 text0 CODE >25:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+684 text0 CODE >26:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+6A0 text0 CODE >27:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+6B0 text0 CODE >28:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+6CC text0 CODE >29:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+6DC text0 CODE >30:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+6F8 text0 CODE >31:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+704 text0 CODE >32:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+714 text0 CODE >33:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+720 text0 CODE >34:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+730 text0 CODE >35:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+750 text0 CODE >36:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+762 text0 CODE >37:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+782 text0 CODE >38:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+794 text0 CODE >39:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+7B4 text0 CODE >40:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+7C6 text0 CODE >41:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+7E6 text0 CODE >42:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+7F8 text0 CODE >43:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+818 text0 CODE >44:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+81C text0 CODE >45:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+820 text0 CODE >46:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+842 text0 CODE >47:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+84A text0 CODE >48:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+86A text0 CODE >49:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+86C text0 CODE >50:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+870 text0 CODE >52:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+88E text0 CODE >53:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+890 text0 CODE >54:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+894 text0 CODE >56:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+8B2 text0 CODE >57:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+8B4 text0 CODE >58:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+8B8 text0 CODE >60:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+8D8 text0 CODE >61:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+8DA text0 CODE >62:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+8DE text0 CODE >64:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+8FE text0 CODE >65:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+900 text0 CODE >66:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+904 text0 CODE >68:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+922 text0 CODE >69:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+924 text0 CODE >70:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+928 text0 CODE >73:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+93E text0 CODE >76:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+952 text0 CODE >77:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+9A2 text0 CODE >78:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+9D6 text0 CODE >79:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+9DC text0 CODE >80:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+A2C text0 CODE >81:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+A60 text0 CODE >82:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+A74 text0 CODE >83:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+A80 text0 CODE >84:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+A88 text0 CODE >85:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+A9C text0 CODE >86:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+AA8 text0 CODE >87:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+AD8 text0 CODE >88:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+B08 text0 CODE >89:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+B24 text0 CODE >90:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+B30 text0 CODE >91:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+B34 text0 CODE >93:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+B48 text0 CODE >94:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+B54 text0 CODE >95:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+B98 text0 CODE >96:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+BDC text0 CODE >97:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+C20 text0 CODE >98:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+C26 text0 CODE >99:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+C56 text0 CODE >100:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+C62 text0 CODE >101:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+C76 text0 CODE >102:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+C82 text0 CODE >103:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+C86 text0 CODE >104:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+CB8 text0 CODE >105:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+CC2 text0 CODE >107:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+CDE text0 CODE >109:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+CE8 text0 CODE >109:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+CF6 text0 CODE >109:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+CFE text0 CODE >109:C:\Users\tadin\OneDrive\Desktop\2021.2\Lab Programação Embarcada\Projeto01.X\main.c
+1E52 cinit CODE >1156:C:\Users\tadin\AppData\Local\Temp\xcAsag0.s
+1E52 cinit CODE >1158:C:\Users\tadin\AppData\Local\Temp\xcAsag0.s
+1E52 cinit CODE >1161:C:\Users\tadin\AppData\Local\Temp\xcAsag0.s
+1E52 cinit CODE >1181:C:\Users\tadin\AppData\Local\Temp\xcAsag0.s
+1E56 cinit CODE >1182:C:\Users\tadin\AppData\Local\Temp\xcAsag0.s
+1E58 cinit CODE >1183:C:\Users\tadin\AppData\Local\Temp\xcAsag0.s
+1E58 cinit CODE >1184:C:\Users\tadin\AppData\Local\Temp\xcAsag0.s
+1E5A cinit CODE >1185:C:\Users\tadin\AppData\Local\Temp\xcAsag0.s
+1E5C cinit CODE >1186:C:\Users\tadin\AppData\Local\Temp\xcAsag0.s
+1E5E cinit CODE >1192:C:\Users\tadin\AppData\Local\Temp\xcAsag0.s
+1E5E cinit CODE >1195:C:\Users\tadin\AppData\Local\Temp\xcAsag0.s
+1E60 cinit CODE >1196:C:\Users\tadin\AppData\Local\Temp\xcAsag0.s
+1E62 cinit CODE >1197:C:\Users\tadin\AppData\Local\Temp\xcAsag0.s
+1E64 cinit CODE >1198:C:\Users\tadin\AppData\Local\Temp\xcAsag0.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___awdiv@counter 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__size_of_pushNibble 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__size_of_bcd2dec 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_i2cReadByte 18F0 0 CODE 0 text24 dist/default/production\Projeto01.X.production.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Projeto01.X.production.o
+__Hspace_0 1E76 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__Hspace_1 42 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__size_of_lcdChar 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__size_of_lcdInit 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__end_of_lcdString 18F0 0 CODE 0 text4 dist/default/production\Projeto01.X.production.o
+lcdCommand@value E 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+_i2cWriteByte 1788 0 CODE 0 text22 dist/default/production\Projeto01.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Projeto01.X.production.o
+__size_of_lcdString 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Projeto01.X.production.o
+__end_of_rgbInit 1B78 0 CODE 0 text2 dist/default/production\Projeto01.X.production.o
+_i2c_stop 1CF4 0 CODE 0 text26 dist/default/production\Projeto01.X.production.o
+__end_of_delayMicro 1E74 0 CODE 0 text12 dist/default/production\Projeto01.X.production.o
+main@i 34 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__end_of_I2C_delay 1E76 0 CODE 0 text34 dist/default/production\Projeto01.X.production.o
+__Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\Projeto01.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+_keys 3E 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto01.X.production.o
+_main 644 0 CODE 0 text0 dist/default/production\Projeto01.X.production.o
+__size_of_I2C_delay 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+start 0 0 CODE 0 init C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__end_of_i2c_stop 1D22 0 CODE 0 text26 dist/default/production\Projeto01.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Projeto01.X.production.o
+_lcdString 189A 0 CODE 0 text4 dist/default/production\Projeto01.X.production.o
+__size_of_lcdCommand 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+?___wmul 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__size_of_pulseEnablePin 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+kpDebounce@i D 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\Projeto01.X.production.o
+_I2C_delay 1E74 0 CODE 0 text34 dist/default/production\Projeto01.X.production.o
+_kpDebounce 1312 0 CODE 0 text17 dist/default/production\Projeto01.X.production.o
+___awmod@sign 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__size_of_i2cWriteByte 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_lcdPosition 1BB6 0 CODE 0 text6 dist/default/production\Projeto01.X.production.o
+__accesstop 80 0 ABS 0 - C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+intlevel0 0 0 CODE 0 text C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+intlevel1 0 0 CODE 0 text C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+intlevel2 0 0 CODE 0 text C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+intlevel3 0 0 CODE 0 text C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Projeto01.X.production.o
+_PulseEnClock 1D22 0 CODE 0 text19 dist/default/production\Projeto01.X.production.o
+__size_of_rgbColor 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+kpDebounce@tempo 41 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto01.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Projeto01.X.production.o
+__size_of_PulseClockData 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\Projeto01.X.production.o
+___awdiv@sign 18 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\Projeto01.X.production.o
+i2cWriteByte@send_start A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+kpDebounce@newRead 3C 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto01.X.production.o
+__end_of_i2cWriteByte 17E8 0 CODE 0 text22 dist/default/production\Projeto01.X.production.o
+___wmul@multiplicand 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+i2cWriteByte@bit B 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__end_of_bcd2dec 1B3A 0 CODE 0 text35 dist/default/production\Projeto01.X.production.o
+_ADCON0 FC2 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_ADCON1 FC1 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_ADCON2 FC0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_ADRESH FC4 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_ADRESL FC3 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+?_kpRead 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__end_of_lcdChar 1E34 0 CODE 0 text5 dist/default/production\Projeto01.X.production.o
+__end_of_lcdInit 15C0 0 CODE 0 text7 dist/default/production\Projeto01.X.production.o
+___awdiv@dividend 13 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\Projeto01.X.production.o
+__end_of___wmul 1E16 0 CODE 0 text36 dist/default/production\Projeto01.X.production.o
+__size_of_soWrite 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__end_of_digitalRead 1312 0 CODE 0 text31 dist/default/production\Projeto01.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Projeto01.X.production.o
+main@vel 38 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+main@vol 33 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__size_of_PulseEnClock 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_i2c_write_bit 1842 0 CODE 0 text25 dist/default/production\Projeto01.X.production.o
+__end_of_i2c_start 1AB6 0 CODE 0 text23 dist/default/production\Projeto01.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Projeto01.X.production.o
+__end_of_kpDebounce 1448 0 CODE 0 text17 dist/default/production\Projeto01.X.production.o
+soWrite@value 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\Projeto01.X.production.o
+___awdiv@divisor 15 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__size_of_i2c_start 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__end_of___awdiv 150C 0 CODE 0 text37 dist/default/production\Projeto01.X.production.o
+__end_of___awmod 1720 0 CODE 0 text41 dist/default/production\Projeto01.X.production.o
+_adcInit 19E2 0 CODE 0 text39 dist/default/production\Projeto01.X.production.o
+_adcRead 1944 0 CODE 0 text38 dist/default/production\Projeto01.X.production.o
+_rgbColor 15C0 0 CODE 0 text3 dist/default/production\Projeto01.X.production.o
+__size_of_pinMode 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_dsReadData 1A2A 0 CODE 0 text21 dist/default/production\Projeto01.X.production.o
+_i2c_read_bit 1C92 0 CODE 0 text28 dist/default/production\Projeto01.X.production.o
+__end_of_rgbColor 1670 0 CODE 0 text3 dist/default/production\Projeto01.X.production.o
+_i2c_start 1A70 0 CODE 0 text23 dist/default/production\Projeto01.X.production.o
+__end_of_PulseEnClock 1D4C 0 CODE 0 text19 dist/default/production\Projeto01.X.production.o
+__Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\Projeto01.X.production.o
+turnOn@led 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+start_initialization 1E52 0 CODE 0 cinit dist/default/production\Projeto01.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Projeto01.X.production.o
+i2cWriteByte@byte 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__end_of_kpInit 1C92 0 CODE 0 text15 dist/default/production\Projeto01.X.production.o
+__end_of_kpRead 1E72 0 CODE 0 text14 dist/default/production\Projeto01.X.production.o
+_digitalWrite D0C 0 CODE 0 text33 dist/default/production\Projeto01.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__size_of_delayMicro 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+pinMode@pin 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__size_of_i2c_read_bit 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+delayMili@a 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+delayMili@i 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+?_adcRead 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+pushByte@rs A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+_rgbInit 1B3A 0 CODE 0 text2 dist/default/production\Projeto01.X.production.o
+__end_of_i2cReadByte 1944 0 CODE 0 text24 dist/default/production\Projeto01.X.production.o
+__end_of_soInit 1BB6 0 CODE 0 text16 dist/default/production\Projeto01.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\Projeto01.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\Projeto01.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\Projeto01.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\Projeto01.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\Projeto01.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\Projeto01.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\Projeto01.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\Projeto01.X.production.o
+__end_of_dsReadData 1A70 0 CODE 0 text21 dist/default/production\Projeto01.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\Projeto01.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\Projeto01.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\Projeto01.X.production.o
+__end_of_soWrite 19E2 0 CODE 0 text18 dist/default/production\Projeto01.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\Projeto01.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\Projeto01.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\Projeto01.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\Projeto01.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\Projeto01.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\Projeto01.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\Projeto01.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\Projeto01.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\Projeto01.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\Projeto01.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\Projeto01.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\Projeto01.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\Projeto01.X.production.o
+_main$1208 30 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__end_of_turnOn 1788 0 CODE 0 text1 dist/default/production\Projeto01.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Projeto01.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\Projeto01.X.production.o
+__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\Projeto01.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\Projeto01.X.production.o
+__size_of_digitalWrite 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__size_of_i2c_write_bit 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+?_digitalRead 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+adcRead@channel 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\Projeto01.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\Projeto01.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\Projeto01.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\Projeto01.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\Projeto01.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\Projeto01.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\Projeto01.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\Projeto01.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\Projeto01.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\Projeto01.X.production.o
+__end_of_i2c_read_bit 1CC4 0 CODE 0 text28 dist/default/production\Projeto01.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\Projeto01.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\Projeto01.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\Projeto01.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\Projeto01.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\Projeto01.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\Projeto01.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\Projeto01.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\Projeto01.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\Projeto01.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\Projeto01.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\Projeto01.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\Projeto01.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\Projeto01.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\Projeto01.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\Projeto01.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\Projeto01.X.production.o
+__end_of_pinMode 11A8 0 CODE 0 text40 dist/default/production\Projeto01.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\Projeto01.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\Projeto01.X.production.o
+__Hinit 4 0 CODE 0 init dist/default/production\Projeto01.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\Projeto01.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\Projeto01.X.production.o
+__Htemp 0 0 COMRAM 1 temp dist/default/production\Projeto01.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\Projeto01.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\Projeto01.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\Projeto01.X.production.o
+__Linit 0 0 CODE 0 init dist/default/production\Projeto01.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\Projeto01.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\Projeto01.X.production.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\Projeto01.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\Projeto01.X.production.o
+___wmul 1DF0 0 CODE 0 text36 dist/default/production\Projeto01.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\Projeto01.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\Projeto01.X.production.o
+__S0 1E76 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__S1 42 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__S2 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__end_of_digitalWrite F5A 0 CODE 0 text33 dist/default/production\Projeto01.X.production.o
+__size_of_digitalRead 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__end_of_i2c_write_bit 189A 0 CODE 0 text25 dist/default/production\Projeto01.X.production.o
+__end_of_lcdPosition 1BF0 0 CODE 0 text6 dist/default/production\Projeto01.X.production.o
+i2c_write_bit@bit 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Projeto01.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\Projeto01.X.production.o
+kpDebounce@oldRead 3A 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto01.X.production.o
+__end_of_charKey 61B 0 SMALLCONST 0 smallconst dist/default/production\Projeto01.X.production.o
+__size_of_read_SCL 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__size_of_read_SDA 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+i2cReadByte@bit B 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+_pulseEnablePin 1AB6 0 CODE 0 text11 dist/default/production\Projeto01.X.production.o
+pushByte@value D 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+_bcd2dec 1AF8 0 CODE 0 text35 dist/default/production\Projeto01.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\Projeto01.X.production.o
+__size_of_kpDebounce 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_pushNibble 1DCA 0 CODE 0 text8 dist/default/production\Projeto01.X.production.o
+_lcdChar 1E16 0 CODE 0 text5 dist/default/production\Projeto01.X.production.o
+_lcdInit 150C 0 CODE 0 text7 dist/default/production\Projeto01.X.production.o
+__Hramtop 600 0 RAM 0 ramtop dist/default/production\Projeto01.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\Projeto01.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\Projeto01.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+i2cWriteByte@send_stop 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\Projeto01.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\Projeto01.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\Projeto01.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\Projeto01.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\Projeto01.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\Projeto01.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\Projeto01.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\Projeto01.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\Projeto01.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\Projeto01.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\Projeto01.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\Projeto01.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\Projeto01.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\Projeto01.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production\Projeto01.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production\Projeto01.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production\Projeto01.X.production.o
+__Htext27 0 0 ABS 0 text27 dist/default/production\Projeto01.X.production.o
+__Htext28 0 0 ABS 0 text28 dist/default/production\Projeto01.X.production.o
+__Htext29 0 0 ABS 0 text29 dist/default/production\Projeto01.X.production.o
+__Htext30 0 0 ABS 0 text30 dist/default/production\Projeto01.X.production.o
+__Htext31 0 0 ABS 0 text31 dist/default/production\Projeto01.X.production.o
+__Htext32 0 0 ABS 0 text32 dist/default/production\Projeto01.X.production.o
+__Htext33 0 0 ABS 0 text33 dist/default/production\Projeto01.X.production.o
+__Htext34 0 0 ABS 0 text34 dist/default/production\Projeto01.X.production.o
+__Htext35 0 0 ABS 0 text35 dist/default/production\Projeto01.X.production.o
+__Htext36 0 0 ABS 0 text36 dist/default/production\Projeto01.X.production.o
+__Htext37 0 0 ABS 0 text37 dist/default/production\Projeto01.X.production.o
+__Htext38 0 0 ABS 0 text38 dist/default/production\Projeto01.X.production.o
+__Htext39 0 0 ABS 0 text39 dist/default/production\Projeto01.X.production.o
+__Htext40 0 0 ABS 0 text40 dist/default/production\Projeto01.X.production.o
+__Htext41 0 0 ABS 0 text41 dist/default/production\Projeto01.X.production.o
+i2c_read_bit@bit 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+_kpInit 1C60 0 CODE 0 text15 dist/default/production\Projeto01.X.production.o
+_kpRead 1E68 0 CODE 0 text14 dist/default/production\Projeto01.X.production.o
+___awmod@counter 29 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+_PulseClockData 1D4C 0 CODE 0 text20 dist/default/production\Projeto01.X.production.o
+__ptext10 17E8 0 CODE 0 text10 dist/default/production\Projeto01.X.production.o
+__ptext11 1AB6 0 CODE 0 text11 dist/default/production\Projeto01.X.production.o
+__ptext12 1E72 0 CODE 0 text12 dist/default/production\Projeto01.X.production.o
+__ptext13 1CC4 0 CODE 0 text13 dist/default/production\Projeto01.X.production.o
+__ptext14 1E68 0 CODE 0 text14 dist/default/production\Projeto01.X.production.o
+__ptext15 1C60 0 CODE 0 text15 dist/default/production\Projeto01.X.production.o
+__ptext16 1B78 0 CODE 0 text16 dist/default/production\Projeto01.X.production.o
+__ptext17 1312 0 CODE 0 text17 dist/default/production\Projeto01.X.production.o
+__ptext18 1994 0 CODE 0 text18 dist/default/production\Projeto01.X.production.o
+__ptext19 1D22 0 CODE 0 text19 dist/default/production\Projeto01.X.production.o
+__ptext20 1D4C 0 CODE 0 text20 dist/default/production\Projeto01.X.production.o
+__ptext21 1A2A 0 CODE 0 text21 dist/default/production\Projeto01.X.production.o
+__ptext22 1788 0 CODE 0 text22 dist/default/production\Projeto01.X.production.o
+__ptext23 1A70 0 CODE 0 text23 dist/default/production\Projeto01.X.production.o
+__ptext24 18F0 0 CODE 0 text24 dist/default/production\Projeto01.X.production.o
+__ptext25 1842 0 CODE 0 text25 dist/default/production\Projeto01.X.production.o
+__ptext26 1CF4 0 CODE 0 text26 dist/default/production\Projeto01.X.production.o
+__ptext27 1D76 0 CODE 0 text27 dist/default/production\Projeto01.X.production.o
+__ptext28 1C92 0 CODE 0 text28 dist/default/production\Projeto01.X.production.o
+__ptext29 1BF0 0 CODE 0 text29 dist/default/production\Projeto01.X.production.o
+__ptext30 1C28 0 CODE 0 text30 dist/default/production\Projeto01.X.production.o
+__ptext31 11A8 0 CODE 0 text31 dist/default/production\Projeto01.X.production.o
+__ptext32 1DA0 0 CODE 0 text32 dist/default/production\Projeto01.X.production.o
+__ptext33 D0C 0 CODE 0 text33 dist/default/production\Projeto01.X.production.o
+__ptext34 1E74 0 CODE 0 text34 dist/default/production\Projeto01.X.production.o
+__ptext35 1AF8 0 CODE 0 text35 dist/default/production\Projeto01.X.production.o
+__ptext36 1DF0 0 CODE 0 text36 dist/default/production\Projeto01.X.production.o
+__ptext37 1448 0 CODE 0 text37 dist/default/production\Projeto01.X.production.o
+__ptext38 1944 0 CODE 0 text38 dist/default/production\Projeto01.X.production.o
+__ptext39 19E2 0 CODE 0 text39 dist/default/production\Projeto01.X.production.o
+__ptext40 F5A 0 CODE 0 text40 dist/default/production\Projeto01.X.production.o
+__ptext41 1670 0 CODE 0 text41 dist/default/production\Projeto01.X.production.o
+___awdiv 1448 0 CODE 0 text37 dist/default/production\Projeto01.X.production.o
+___awmod 1670 0 CODE 0 text41 dist/default/production\Projeto01.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Projeto01.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\Projeto01.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\Projeto01.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\Projeto01.X.production.o
+_lcdCommand 1E34 0 CODE 0 text9 dist/default/production\Projeto01.X.production.o
+i2cReadByte@send_stop 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+___wmul@multiplier 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Projeto01.X.production.o
+__end_of_clear_SCL 1DCA 0 CODE 0 text32 dist/default/production\Projeto01.X.production.o
+__end_of_clear_SDA 1DA0 0 CODE 0 text27 dist/default/production\Projeto01.X.production.o
+_soInit 1B78 0 CODE 0 text16 dist/default/production\Projeto01.X.production.o
+main@tecla 36 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\Projeto01.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+_read_SCL 1C28 0 CODE 0 text30 dist/default/production\Projeto01.X.production.o
+_read_SDA 1BF0 0 CODE 0 text29 dist/default/production\Projeto01.X.production.o
+__end_of_pulseEnablePin 1AF8 0 CODE 0 text11 dist/default/production\Projeto01.X.production.o
+__size_of_clear_SCL 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__size_of_clear_SDA 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_turnOn 1720 0 CODE 0 text1 dist/default/production\Projeto01.X.production.o
+__size_of_pushByte 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__size_of_i2cReadByte 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+stackhi 5FF 0 ABS 0 - C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+stacklo 80 0 ABS 0 - C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+pinMode@type 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Lintcode 0 0 CODE 0 intcode dist/default/production\Projeto01.X.production.o
+?_bcd2dec 21 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\Projeto01.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\Projeto01.X.production.o
+__size_of_kpInit 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__size_of_kpRead 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__end_of_read_SCL 1C60 0 CODE 0 text30 dist/default/production\Projeto01.X.production.o
+__end_of_read_SDA 1C28 0 CODE 0 text29 dist/default/production\Projeto01.X.production.o
+__end_of_pushNibble 1DF0 0 CODE 0 text8 dist/default/production\Projeto01.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+main@fm 35 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__pbssCOMRAM 3A 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto01.X.production.o
+_clear_SCL 1DA0 0 CODE 0 text32 dist/default/production\Projeto01.X.production.o
+_clear_SDA 1D76 0 CODE 0 text27 dist/default/production\Projeto01.X.production.o
+__size_of_adcInit 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__size_of_adcRead 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__size_of_dsReadData 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__end_of_PulseClockData 1D76 0 CODE 0 text20 dist/default/production\Projeto01.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+bcd2dec@value 21 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+end_of_initialization 1E5E 0 CODE 0 cinit dist/default/production\Projeto01.X.production.o
+lcdChar@value E 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+delayMicro@a 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\Projeto01.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\Projeto01.X.production.o
+digitalWrite@pin 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+___awdiv@quotient 19 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+?___awdiv 13 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+?___awmod 25 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+?_dsReadData E 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\Projeto01.X.production.o
+digitalRead@pin 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+dsReadData@result 11 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__end_of_delayMili 1CF4 0 CODE 0 text13 dist/default/production\Projeto01.X.production.o
+___awmod@dividend 25 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__size_of_soInit 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__Lramtop 600 0 RAM 0 ramtop dist/default/production\Projeto01.X.production.o
+__size_of_delayMili 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\Projeto01.X.production.o
+__pcinit 1E52 0 CODE 0 cinit dist/default/production\Projeto01.X.production.o
+__end_of_lcdCommand 1E52 0 CODE 0 text9 dist/default/production\Projeto01.X.production.o
+_soWrite 1994 0 CODE 0 text18 dist/default/production\Projeto01.X.production.o
+__size_of_turnOn 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__ptext0 644 0 CODE 0 text0 dist/default/production\Projeto01.X.production.o
+__ptext1 1720 0 CODE 0 text1 dist/default/production\Projeto01.X.production.o
+__ptext2 1B3A 0 CODE 0 text2 dist/default/production\Projeto01.X.production.o
+__ptext3 15C0 0 CODE 0 text3 dist/default/production\Projeto01.X.production.o
+__ptext4 189A 0 CODE 0 text4 dist/default/production\Projeto01.X.production.o
+__ptext5 1E16 0 CODE 0 text5 dist/default/production\Projeto01.X.production.o
+__ptext6 1BB6 0 CODE 0 text6 dist/default/production\Projeto01.X.production.o
+__ptext7 150C 0 CODE 0 text7 dist/default/production\Projeto01.X.production.o
+__ptext8 1DCA 0 CODE 0 text8 dist/default/production\Projeto01.X.production.o
+__ptext9 1E34 0 CODE 0 text9 dist/default/production\Projeto01.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\Projeto01.X.production.o
+lcdPosition@col 11 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\Projeto01.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\Projeto01.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\Projeto01.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\Projeto01.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\Projeto01.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\Projeto01.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\Projeto01.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\Projeto01.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\Projeto01.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\Projeto01.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\Projeto01.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\Projeto01.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\Projeto01.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\Projeto01.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production\Projeto01.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production\Projeto01.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production\Projeto01.X.production.o
+__Ltext27 0 0 ABS 0 text27 dist/default/production\Projeto01.X.production.o
+__Ltext28 0 0 ABS 0 text28 dist/default/production\Projeto01.X.production.o
+__Ltext29 0 0 ABS 0 text29 dist/default/production\Projeto01.X.production.o
+__Ltext30 0 0 ABS 0 text30 dist/default/production\Projeto01.X.production.o
+__Ltext31 0 0 ABS 0 text31 dist/default/production\Projeto01.X.production.o
+__Ltext32 0 0 ABS 0 text32 dist/default/production\Projeto01.X.production.o
+__Ltext33 0 0 ABS 0 text33 dist/default/production\Projeto01.X.production.o
+__Ltext34 0 0 ABS 0 text34 dist/default/production\Projeto01.X.production.o
+__Ltext35 0 0 ABS 0 text35 dist/default/production\Projeto01.X.production.o
+__Ltext36 0 0 ABS 0 text36 dist/default/production\Projeto01.X.production.o
+__Ltext37 0 0 ABS 0 text37 dist/default/production\Projeto01.X.production.o
+__Ltext38 0 0 ABS 0 text38 dist/default/production\Projeto01.X.production.o
+__Ltext39 0 0 ABS 0 text39 dist/default/production\Projeto01.X.production.o
+__Ltext40 0 0 ABS 0 text40 dist/default/production\Projeto01.X.production.o
+__Ltext41 0 0 ABS 0 text41 dist/default/production\Projeto01.X.production.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\tadin\AppData\Local\Temp\xcAsag0.o
+main@marcha 37 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+rgbColor@led 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__size_of_lcdPosition 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_pushByte 17E8 0 CODE 0 text10 dist/default/production\Projeto01.X.production.o
+lcdString@i 13 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\Projeto01.X.production.o
+dsReadData@address E 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Projeto01.X.production.o
+__psmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\Projeto01.X.production.o
+_delayMili 1CC4 0 CODE 0 text13 dist/default/production\Projeto01.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\Projeto01.X.production.o
+main@painel 32 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+_started 40 0 COMRAM 1 bssCOMRAM dist/default/production\Projeto01.X.production.o
+_pinMode F5A 0 CODE 0 text40 dist/default/production\Projeto01.X.production.o
+__end_of_pushByte 1842 0 CODE 0 text10 dist/default/production\Projeto01.X.production.o
+_digitalRead 11A8 0 CODE 0 text31 dist/default/production\Projeto01.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Projeto01.X.production.o
+__end_of__initialization 1E5E 0 CODE 0 cinit dist/default/production\Projeto01.X.production.o
+lcdString@msg F 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+___awmod@divisor 27 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\Projeto01.X.production.o
+__size_of_rgbInit 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+lcdPosition@line F 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+pushNibble@rs A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\Projeto01.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+adcRead@ADvalor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__end_of_adcInit 1A2A 0 CODE 0 text39 dist/default/production\Projeto01.X.production.o
+__end_of_adcRead 1994 0 CODE 0 text38 dist/default/production\Projeto01.X.production.o
+__end_of_main D0C 0 CODE 0 text0 dist/default/production\Projeto01.X.production.o
+_delayMicro 1E72 0 CODE 0 text12 dist/default/production\Projeto01.X.production.o
+__size_of_i2c_stop 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+i2cReadByte@byte D 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+i2cReadByte@nack A 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+_PORTA F80 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_PORTB F81 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_PORTC F82 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_PORTD F83 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_PORTE F84 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_TRISA F92 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_TRISB F93 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_TRISC F94 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+_TRISE F96 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__end_of_radio 611 0 SMALLCONST 0 smallconst dist/default/production\Projeto01.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\Projeto01.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\Projeto01.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\Projeto01.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\Projeto01.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\Projeto01.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\Projeto01.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\Projeto01.X.production.o
+_radio 601 0 SMALLCONST 0 smallconst dist/default/production\Projeto01.X.production.o
+soWrite@i 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__initialization 1E52 0 CODE 0 cinit dist/default/production\Projeto01.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\Projeto01.X.production.o
+___wmul@product 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Hsmallconst 644 0 SMALLCONST 0 smallconst dist/default/production\Projeto01.X.production.o
+pushNibble@value C 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\Projeto01.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Projeto01.X.production.o
+__Hintcode 0 0 CODE 0 intcode dist/default/production\Projeto01.X.production.o
+digitalWrite@value 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Projeto01.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text0 0 644 644 1832 1
+cstackCOMRAM 1 1 1 41 1
+reset_vec 0 0 0 4 1
+smallconst 0 600 600 44 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

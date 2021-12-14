@@ -1,0 +1,436 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"23 ./rgb.h
+[; ;./rgb.h: 23:  void rgbInit(void);
+[v _rgbInit `(v ~T0 @X0 0 ef ]
+"6 ./keypad.h
+[; ;./keypad.h: 6:  void kpInit(void);
+[v _kpInit `(v ~T0 @X0 0 ef ]
+"22 ./adc.h
+[; ;./adc.h: 22:  void adcInit(void);
+[v _adcInit `(v ~T0 @X0 0 ef ]
+"8 ./lcd.h
+[; ;./lcd.h: 8:   void lcdInit(void);
+[v _lcdInit `(v ~T0 @X0 0 ef ]
+"21 ./rgb.h
+[; ;./rgb.h: 21:  void turnOn(int led);
+[v _turnOn `(v ~T0 @X0 0 ef1`i ]
+"23 ./adc.h
+[; ;./adc.h: 23:  int adcRead(unsigned int channel);
+[v _adcRead `(i ~T0 @X0 0 ef1`ui ]
+"20 ./rgb.h
+[; ;./rgb.h: 20:  void rgbColor(int led);
+[v _rgbColor `(v ~T0 @X0 0 ef1`i ]
+"5 ./keypad.h
+[; ;./keypad.h: 5:  void kpDebounce(void);
+[v _kpDebounce `(v ~T0 @X0 0 ef ]
+"3
+[; ;./keypad.h: 3:  unsigned int kpRead(void);
+[v _kpRead `(ui ~T0 @X0 0 ef ]
+"7 ./lcd.h
+[; ;./lcd.h: 7:   void lcdPosition(int line, int col);
+[v _lcdPosition `(v ~T0 @X0 0 ef2`i`i ]
+"4
+[; ;./lcd.h: 4:   void lcdChar(char value);
+[v _lcdChar `(v ~T0 @X0 0 ef1`uc ]
+"18 ./ds1307.h
+[; ;./ds1307.h: 18:  int bcd2dec(int value);
+[v _bcd2dec `(i ~T0 @X0 0 ef1`i ]
+"20
+[; ;./ds1307.h: 20:  int dsReadData(int address);
+[v _dsReadData `(i ~T0 @X0 0 ef1`i ]
+"5 ./lcd.h
+[; ;./lcd.h: 5:   void lcdString(char msg[]);
+[v _lcdString `(v ~T0 @X0 0 ef1`*uc ]
+"15 main.c
+[; ;main.c: 15: static const int radio[] = {856,879,901,963,1005,1016,1074,1108};
+[v _radio `Ci ~T0 @X0 -> 8 `i s ]
+[i _radio
+:U ..
+-> 856 `i
+-> 879 `i
+-> 901 `i
+-> 963 `i
+-> 1005 `i
+-> 1016 `i
+-> 1074 `i
+-> 1108 `i
+..
+]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"16
+[; ;main.c: 16: void main(void) {
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"17
+[; ;main.c: 17:     int vel=0;
+[v _vel `i ~T0 @X0 1 a ]
+[e = _vel -> 0 `i ]
+"18
+[; ;main.c: 18:     unsigned char marcha=0,tecla,i,painel=0,fm=0,vol=0;
+[v _marcha `uc ~T0 @X0 1 a ]
+[e = _marcha -> -> 0 `i `uc ]
+[v _tecla `uc ~T0 @X0 1 a ]
+[v _i `uc ~T0 @X0 1 a ]
+[v _painel `uc ~T0 @X0 1 a ]
+[e = _painel -> -> 0 `i `uc ]
+[v _fm `uc ~T0 @X0 1 a ]
+[e = _fm -> -> 0 `i `uc ]
+[v _vol `uc ~T0 @X0 1 a ]
+[e = _vol -> -> 0 `i `uc ]
+"19
+[; ;main.c: 19:     rgbInit();
+[e ( _rgbInit ..  ]
+"20
+[; ;main.c: 20:     kpInit();
+[e ( _kpInit ..  ]
+"21
+[; ;main.c: 21:     adcInit();
+[e ( _adcInit ..  ]
+"22
+[; ;main.c: 22:     lcdInit();
+[e ( _lcdInit ..  ]
+"23
+[; ;main.c: 23:     turnOn(2);
+[e ( _turnOn (1 -> 2 `i ]
+"24
+[; ;main.c: 24:     for(;;){
+{
+[e :U 2 ]
+{
+"25
+[; ;main.c: 25:         vel = adcRead(1);
+[e = _vel ( _adcRead (1 -> -> 1 `i `ui ]
+"26
+[; ;main.c: 26:         if(vel<500)
+[e $ ! < _vel -> 500 `i 5  ]
+"27
+[; ;main.c: 27:            rgbColor(2);
+[e ( _rgbColor (1 -> 2 `i ]
+[e $U 6  ]
+"28
+[; ;main.c: 28:         else if(vel<700)
+[e :U 5 ]
+[e $ ! < _vel -> 700 `i 7  ]
+"29
+[; ;main.c: 29:            rgbColor(3);
+[e ( _rgbColor (1 -> 3 `i ]
+[e $U 8  ]
+"30
+[; ;main.c: 30:         else if(vel<900)
+[e :U 7 ]
+[e $ ! < _vel -> 900 `i 9  ]
+"31
+[; ;main.c: 31:            rgbColor(1);
+[e ( _rgbColor (1 -> 1 `i ]
+[e :U 9 ]
+[e :U 8 ]
+[e :U 6 ]
+"32
+[; ;main.c: 32:         if(marcha==0)
+[e $ ! == -> _marcha `i -> 0 `i 10  ]
+"33
+[; ;main.c: 33:                 vel=0;
+[e = _vel -> 0 `i ]
+[e $U 11  ]
+"34
+[; ;main.c: 34:         else if(marcha==1)
+[e :U 10 ]
+[e $ ! == -> _marcha `i -> 1 `i 12  ]
+"35
+[; ;main.c: 35:                 vel/=50;
+[e =/ _vel -> 50 `i ]
+[e $U 13  ]
+"36
+[; ;main.c: 36:         else if(marcha==2)
+[e :U 12 ]
+[e $ ! == -> _marcha `i -> 2 `i 14  ]
+"37
+[; ;main.c: 37:                 vel/=20;
+[e =/ _vel -> 20 `i ]
+[e $U 15  ]
+"38
+[; ;main.c: 38:         else if(marcha==3)
+[e :U 14 ]
+[e $ ! == -> _marcha `i -> 3 `i 16  ]
+"39
+[; ;main.c: 39:                 vel/=10;
+[e =/ _vel -> 10 `i ]
+[e $U 17  ]
+"40
+[; ;main.c: 40:         else if(marcha==4)
+[e :U 16 ]
+[e $ ! == -> _marcha `i -> 4 `i 18  ]
+"41
+[; ;main.c: 41:                 vel/=7;
+[e =/ _vel -> 7 `i ]
+[e $U 19  ]
+"42
+[; ;main.c: 42:        else if(marcha==5)
+[e :U 18 ]
+[e $ ! == -> _marcha `i -> 5 `i 20  ]
+"43
+[; ;main.c: 43:                 vel/=5;
+[e =/ _vel -> 5 `i ]
+[e :U 20 ]
+[e :U 19 ]
+[e :U 17 ]
+[e :U 15 ]
+[e :U 13 ]
+[e :U 11 ]
+"44
+[; ;main.c: 44:         for(i=0;i<8;i++){
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 8 `i 21  ]
+[e $U 22  ]
+[e :U 21 ]
+{
+"45
+[; ;main.c: 45:             kpDebounce();
+[e ( _kpDebounce ..  ]
+"46
+[; ;main.c: 46:             if (kpRead() != tecla){
+[e $ ! != ( _kpRead ..  -> _tecla `ui 24  ]
+{
+"47
+[; ;main.c: 47:                 tecla = kpRead();
+[e = _tecla -> ( _kpRead ..  `uc ]
+"48
+[; ;main.c: 48:                     if (((tecla) & (1<<(5)))&&marcha!=5){
+[e $ ! && != & -> _tecla `i << -> 1 `i -> 5 `i -> 0 `i != -> _marcha `i -> 5 `i 25  ]
+{
+"49
+[; ;main.c: 49:                         marcha++;
+[e ++ _marcha -> -> 1 `i `uc ]
+"50
+[; ;main.c: 50:                         painel=0;
+[e = _painel -> -> 0 `i `uc ]
+"51
+[; ;main.c: 51:                     }
+}
+[e :U 25 ]
+"52
+[; ;main.c: 52:                     if (((tecla) & (1<<(7)))&&marcha!=0){
+[e $ ! && != & -> _tecla `i << -> 1 `i -> 7 `i -> 0 `i != -> _marcha `i -> 0 `i 26  ]
+{
+"53
+[; ;main.c: 53:                         marcha--;
+[e -- _marcha -> -> 1 `i `uc ]
+"54
+[; ;main.c: 54:                         painel=0;
+[e = _painel -> -> 0 `i `uc ]
+"55
+[; ;main.c: 55:                     }
+}
+[e :U 26 ]
+"56
+[; ;main.c: 56:                     if (((tecla) & (1<<(1)))&&fm!=0){
+[e $ ! && != & -> _tecla `i << -> 1 `i -> 1 `i -> 0 `i != -> _fm `i -> 0 `i 27  ]
+{
+"57
+[; ;main.c: 57:                         fm--;
+[e -- _fm -> -> 1 `i `uc ]
+"58
+[; ;main.c: 58:                         painel=1;
+[e = _painel -> -> 1 `i `uc ]
+"59
+[; ;main.c: 59:                     }
+}
+[e :U 27 ]
+"60
+[; ;main.c: 60:                     if (((tecla) & (1<<(3)))&&fm!=7){
+[e $ ! && != & -> _tecla `i << -> 1 `i -> 3 `i -> 0 `i != -> _fm `i -> 7 `i 28  ]
+{
+"61
+[; ;main.c: 61:                         fm++;
+[e ++ _fm -> -> 1 `i `uc ]
+"62
+[; ;main.c: 62:                         painel=1;
+[e = _painel -> -> 1 `i `uc ]
+"63
+[; ;main.c: 63:                     }
+}
+[e :U 28 ]
+"64
+[; ;main.c: 64:                     if (((tecla) & (1<<(0)))&&vol!=12){
+[e $ ! && != & -> _tecla `i << -> 1 `i -> 0 `i -> 0 `i != -> _vol `i -> 12 `i 29  ]
+{
+"65
+[; ;main.c: 65:                         vol++;
+[e ++ _vol -> -> 1 `i `uc ]
+"66
+[; ;main.c: 66:                         painel=1;
+[e = _painel -> -> 1 `i `uc ]
+"67
+[; ;main.c: 67:                     }
+}
+[e :U 29 ]
+"68
+[; ;main.c: 68:                     if (((tecla) & (1<<(2)))&&vol!=0){
+[e $ ! && != & -> _tecla `i << -> 1 `i -> 2 `i -> 0 `i != -> _vol `i -> 0 `i 30  ]
+{
+"69
+[; ;main.c: 69:                         vol--;
+[e -- _vol -> -> 1 `i `uc ]
+"70
+[; ;main.c: 70:                         painel=1;
+[e = _painel -> -> 1 `i `uc ]
+"71
+[; ;main.c: 71:                     }
+}
+[e :U 30 ]
+"72
+[; ;main.c: 72:             }
+}
+[e :U 24 ]
+"73
+[; ;main.c: 73:         }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 8 `i 21  ]
+[e :U 22 ]
+}
+"74
+[; ;main.c: 74:         switch(painel){
+[e $U 32  ]
+{
+"75
+[; ;main.c: 75:             case 0:
+[e :U 33 ]
+"76
+[; ;main.c: 76:                 lcdPosition(0,0);
+[e ( _lcdPosition (2 , -> 0 `i -> 0 `i ]
+"77
+[; ;main.c: 77:                 lcdChar(((bcd2dec(dsReadData(2)& 0x5f))/10%10)+48);
+[e ( _lcdChar (1 -> + % / ( _bcd2dec (1 & ( _dsReadData (1 -> 2 `i -> 95 `i -> 10 `i -> 10 `i -> 48 `i `uc ]
+"78
+[; ;main.c: 78:                 lcdChar(((bcd2dec(dsReadData(2)& 0x5f))%10)+48);
+[e ( _lcdChar (1 -> + % ( _bcd2dec (1 & ( _dsReadData (1 -> 2 `i -> 95 `i -> 10 `i -> 48 `i `uc ]
+"79
+[; ;main.c: 79:                 lcdChar(':');
+[e ( _lcdChar (1 -> -> 58 `ui `uc ]
+"80
+[; ;main.c: 80:                 lcdChar(((bcd2dec(dsReadData(1)& 0x7f))/10%10)+48);
+[e ( _lcdChar (1 -> + % / ( _bcd2dec (1 & ( _dsReadData (1 -> 1 `i -> 127 `i -> 10 `i -> 10 `i -> 48 `i `uc ]
+"81
+[; ;main.c: 81:                 lcdChar(((bcd2dec(dsReadData(1)& 0x7f))%10)+48);
+[e ( _lcdChar (1 -> + % ( _bcd2dec (1 & ( _dsReadData (1 -> 1 `i -> 127 `i -> 10 `i -> 48 `i `uc ]
+"82
+[; ;main.c: 82:                 lcdPosition(0,5);
+[e ( _lcdPosition (2 , -> 0 `i -> 5 `i ]
+"83
+[; ;main.c: 83:                 lcdString(" Marcha ");
+[e ( _lcdString (1 :s 1C ]
+"84
+[; ;main.c: 84:                 lcdChar(marcha+48);
+[e ( _lcdChar (1 -> + -> _marcha `i -> 48 `i `uc ]
+"85
+[; ;main.c: 85:                 lcdPosition(1,0);
+[e ( _lcdPosition (2 , -> 1 `i -> 0 `i ]
+"86
+[; ;main.c: 86:                 lcdString(" Vel: ");
+[e ( _lcdString (1 :s 2C ]
+"87
+[; ;main.c: 87:                 lcdChar((vel/100%10)+48);
+[e ( _lcdChar (1 -> + % / _vel -> 100 `i -> 10 `i -> 48 `i `uc ]
+"88
+[; ;main.c: 88:                 lcdChar((vel/10%10)+48);
+[e ( _lcdChar (1 -> + % / _vel -> 10 `i -> 10 `i -> 48 `i `uc ]
+"89
+[; ;main.c: 89:                 lcdChar((vel%10)+48);
+[e ( _lcdChar (1 -> + % _vel -> 10 `i -> 48 `i `uc ]
+"90
+[; ;main.c: 90:                 lcdString(" Km/h");
+[e ( _lcdString (1 :s 3C ]
+"91
+[; ;main.c: 91:                 break;
+[e $U 31  ]
+"92
+[; ;main.c: 92:             case 1:
+[e :U 34 ]
+"93
+[; ;main.c: 93:                 lcdPosition(0,0);
+[e ( _lcdPosition (2 , -> 0 `i -> 0 `i ]
+"94
+[; ;main.c: 94:                 lcdString("Radio: ");
+[e ( _lcdString (1 :s 4C ]
+"95
+[; ;main.c: 95:                 lcdChar((radio[fm]/1000%10)+48);
+[e ( _lcdChar (1 -> + % / *U + &U _radio * -> _fm `ux -> -> # *U &U _radio `ui `ux -> 1000 `i -> 10 `i -> 48 `i `uc ]
+"96
+[; ;main.c: 96:                 lcdChar((radio[fm]/100%10)+48);
+[e ( _lcdChar (1 -> + % / *U + &U _radio * -> _fm `ux -> -> # *U &U _radio `ui `ux -> 100 `i -> 10 `i -> 48 `i `uc ]
+"97
+[; ;main.c: 97:                 lcdChar((radio[fm]/10%10)+48);
+[e ( _lcdChar (1 -> + % / *U + &U _radio * -> _fm `ux -> -> # *U &U _radio `ui `ux -> 10 `i -> 10 `i -> 48 `i `uc ]
+"98
+[; ;main.c: 98:                 lcdChar(',');
+[e ( _lcdChar (1 -> -> 44 `ui `uc ]
+"99
+[; ;main.c: 99:                 lcdChar((radio[fm]%10)+48);
+[e ( _lcdChar (1 -> + % *U + &U _radio * -> _fm `ux -> -> # *U &U _radio `ui `ux -> 10 `i -> 48 `i `uc ]
+"100
+[; ;main.c: 100:                 lcdString("   ");
+[e ( _lcdString (1 :s 5C ]
+"101
+[; ;main.c: 101:                 lcdPosition(1,0);
+[e ( _lcdPosition (2 , -> 1 `i -> 0 `i ]
+"102
+[; ;main.c: 102:                 lcdString("Vol:");
+[e ( _lcdString (1 :s 6C ]
+"103
+[; ;main.c: 103:                 for(i=0;i<12;i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 12 `i 35  ]
+[e $U 36  ]
+[e :U 35 ]
+"104
+[; ;main.c: 104:                     if(i<vol+1)
+[e $ ! < -> _i `i + -> _vol `i -> 1 `i 38  ]
+"105
+[; ;main.c: 105:                         lcdChar('*');
+[e ( _lcdChar (1 -> -> 42 `ui `uc ]
+[e $U 39  ]
+"106
+[; ;main.c: 106:                     else
+[e :U 38 ]
+"107
+[; ;main.c: 107:                         lcdChar(' ');
+[e ( _lcdChar (1 -> -> 32 `ui `uc ]
+[e :U 39 ]
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 12 `i 35  ]
+[e :U 36 ]
+}
+"108
+[; ;main.c: 108:                 break;
+[e $U 31  ]
+"109
+[; ;main.c: 109:         }
+}
+[e $U 31  ]
+[e :U 32 ]
+[e [\ -> _painel `i , $ -> 0 `i 33
+ , $ -> 1 `i 34
+ 31 ]
+[e :U 31 ]
+"110
+[; ;main.c: 110:     }
+}
+[e $U 2  ]
+[e :U 3 ]
+}
+"111
+[; ;main.c: 111: }
+[e :UE 1 ]
+}
+[a 3C 32 75 109 47 104 0 ]
+[a 6C 86 111 108 58 0 ]
+[a 1C 32 77 97 114 99 104 97 32 0 ]
+[a 4C 82 97 100 105 111 58 32 0 ]
+[a 2C 32 86 101 108 58 32 0 ]
+[a 5C 32 32 32 0 ]
